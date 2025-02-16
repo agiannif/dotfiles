@@ -18,3 +18,9 @@ The bootstrap.sh script pulls the latest changes and syncs them to the user's ho
 - https://github.com/fastfetch-cli/fastfetch[fastfetch]
 - https://git-scm.com[git]
 
+== Some Requirements
+- rg
+- fd
+- python3-venv
+- c compiler (build-essential)
+    

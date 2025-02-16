@@ -123,20 +123,6 @@
           "format": ""
       },
       {
-        "type": "swap",
-        "key": "│ SWAP       │{$1}",
-        "format": "{used} / {total} [{percentage}]"
-      },
-      {
-        "type": "swap",
-        "key": "│ USAGE      │{$1}",
-        "format": ""
-      },
-      {
-          "type": "custom",
-          "format": "├────────────┼──────────────────────────────────────────┤"
-      },
-      {
           "type": "disk",
           "key": "│ VOLUME     │{$1}",
           "format": "{size-used} / {size-total} [{size-percentage}]",

@@ -34,6 +34,7 @@ set -gx EDITOR nvim
 
 if status is-interactive
     abbr -a k kubectl
+    abbr -a v vagrant
     abbr -a tf terraform
     # Commands to run in interactive sessions can go here
 end
