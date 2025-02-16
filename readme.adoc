@@ -1,0 +1,8 @@
+:showtitle:
+:toc: left
+:icons: font
+
+= dotfiles
+
+My dotfiles for configuring common tools.
+
