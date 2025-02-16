@@ -12,4 +12,6 @@ vim.opt.hlsearch = false
 vim.opt.wrap = true
 vim.opt.breakindent = true
 
-vim.cmd('syntax enable')
+vim.api.nvim_set_option("clipboard", "unnamed")
+
+vim.cmd("syntax enable")
