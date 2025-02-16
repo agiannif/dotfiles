@@ -15,5 +15,6 @@ The bootstrap.sh script pulls the latest changes and syncs them to the user's ho
 - https://fishshell.com[fish shell]
 - https://wezfurlong.org/wezterm/index.html[wezterm]
 - https://neovim.io[neovim]
-- https://github.com/dylanaraps/neofetch[neofetch]
+- https://github.com/fastfetch-cli/fastfetch[fastfetch]
 - https://git-scm.com[git]
+
