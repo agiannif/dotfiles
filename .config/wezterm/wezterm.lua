@@ -18,8 +18,8 @@ config.default_prog = { '/usr/local/bin/fish', '-l' }
 if appearance.is_dark() then
   config.color_scheme = 'Everforest Dark (Gogh)'
   config.window_frame = {
-    active_titlebar_bg = color_efd_bg_dim,
-    inactive_titlebar_bg = color_efd_bg_dim,
+    active_titlebar_bg = everforest.dark_bg_dim,
+    inactive_titlebar_bg = everforest.dark_bg_dim,
     font = wezterm.font({ family = 'Operator Mono', weight = 'Bold' }),
     font_size = tab_font_size,
   }
@@ -30,7 +30,7 @@ if appearance.is_dark() then
         fg_color = everforest.dark_fg,
       },
       inactive_tab = {
-        bg_color = '#333333',
+        bg_color = everforest.dark_bg_dim,
         fg_color = everforest.dark_fg,
       },
       inactive_tab_hover = {
@@ -38,7 +38,7 @@ if appearance.is_dark() then
         fg_color = everforest.dark_fg,
       },
       new_tab = {
-        bg_color = '#333333',
+        bg_color = everforest.dark_bg_dim,
         fg_color = everforest.dark_fg,
       },
       new_tab_hover = {
@@ -88,9 +88,13 @@ config.font_size = 13
 --- window
 config.initial_rows = 64
 config.initial_cols = 128
-config.window_decorations = 'RESIZE|INTEGRATED_BUTTONS|MACOS_FORCE_ENABLE_SHADOW'
-config.window_background_opacity = 0.90
-config.macos_window_background_blur = 30
+config.window_decorations = 'RESIZE|INTEGRATED_BUTTONS'
+config.native_macos_fullscreen_mode = true
+
+--- enable for transparent window
+--- config.window_decorations = 'RESIZE|INTEGRATED_BUTTONS|MACOS_FORCE_ENABLE_SHADOW'
+--- config.window_background_opacity = 0.90
+--- config.macos_window_background_blur = 30
 
 return config
 
