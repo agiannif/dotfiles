@@ -21,20 +21,22 @@ function fish_prompt
         set arrow (set_color green)' > '(set_color normal)
     end
 
-    string join '' -- '(' (prompt_hostname) ') ' (set_color yellow) (prompt_pwd --dir-length=4 --full-length-dirs 2) (set_color normal) (fish_vcs_prompt) $arrow 
+    string join '' -- '(' (prompt_hostname) ') ' (set_color yellow) (prompt_pwd --dir-length=4 --full-length-dirs 2) (set_color normal) (fish_vcs_prompt) $arrow
 end
 
 function fish_right_prompt
-    string join '' -- (printf %.2f $(echo "$CMD_DURATION/1000" | bc -l)) 's'
+    string join '' -- (printf %.2f $(echo "$CMD_DURATION/1000" | bc -l)) s
 end
 
-# configure nvim to be the default
-alias vim=nvim
-set -gx EDITOR nvim
+# configure default editor
+set -gx EDITOR hx
 
 if status is-interactive
-    abbr -a k kubectl
-    abbr -a v vagrant
-    abbr -a tf terraform
     # Commands to run in interactive sessions can go here
+    abbr -a g git
+    abbr -a k kubectl
+    abbr -a tf terraform
+    abbr -a v vagrant
+    abbr -a lg lazygit
+    abbr -a z zellij
 end

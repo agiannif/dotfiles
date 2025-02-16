@@ -1,0 +1,13 @@
+theme = "everforest_dark"
+
+[editor]
+auto-pairs = false
+bufferline = "multiple"
+line-number = "relative"
+rulers = [120]
+true-color = true
+
+[editor.indent-guides]
+render = true
+skip-levels = 1
+

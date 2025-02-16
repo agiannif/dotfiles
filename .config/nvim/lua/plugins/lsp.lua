@@ -20,31 +20,6 @@ return {
         require("fidget").setup({})
         require("mason").setup()
 
-
-        -- Function to check if the buffer has a supported language server attached
-        local function has_lsp_with_formatting(bufnr)
-            local clients = vim.lsp.get_active_clients({ bufnr = bufnr })
-            for _, client in ipairs(clients) do
-                if client.supports_method("textDocument/formatting") then
-                    return true
-                end
-            end
-            return false
-        end
-
-        -- Autoformat function
-        local function format_buffer()
-            if has_lsp_with_formatting(0) then -- 0 means current buffer
-                vim.lsp.buf.format({ async = false })
-            end
-        end
-
-        -- Create autocmd for formatting on save
-        vim.api.nvim_create_autocmd("BufWritePre", {
-            pattern = "*", -- All files
-            callback = format_buffer,
-        })
-
         local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
         local telescope_builtin = require("telescope.builtin")
         local set_keymaps = function(client, bufnr)
