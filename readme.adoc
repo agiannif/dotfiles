@@ -6,3 +6,14 @@
 
 My dotfiles for configuring common tools.
 
+== Bootstrap
+
+The bootstrap.sh script pulls the latest changes and syncs them to the user's home directory.
+
+== Supported Tools
+
+- https://fishshell.com[fish shell]
+- https://wezfurlong.org/wezterm/index.html[wezterm]
+- https://neovim.io[neovim]
+- https://github.com/dylanaraps/neofetch[neofetch]
+- https://git-scm.com[git]

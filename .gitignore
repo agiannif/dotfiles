@@ -1,3 +1,6 @@
 # folder view options
 .DS_Store
 Desktop.ini
+
+# editor options
+.vscode

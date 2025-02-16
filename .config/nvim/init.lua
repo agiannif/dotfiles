@@ -12,5 +12,4 @@ vim.opt.hlsearch = false
 vim.opt.wrap = true
 vim.opt.breakindent = true
 
-vim.cmd('syntax enabled')
-
+vim.cmd('syntax enable')
