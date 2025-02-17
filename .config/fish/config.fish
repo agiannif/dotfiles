@@ -1,3 +1,6 @@
+# setup brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # add machine report greeting
 function fish_greeting
     # when interacting over ssh, was sometimes getting drawing issues if not waiting for a bit
@@ -38,5 +41,6 @@ if status is-interactive
     abbr -a tf terraform
     abbr -a v vagrant
     abbr -a lg lazygit
+    abbr -a ld lazydocker
     abbr -a z zellij
 end

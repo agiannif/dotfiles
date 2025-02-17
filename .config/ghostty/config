@@ -1,0 +1,23 @@
+# Ghostty Configuration File
+
+## Interface Appearance
+font-family = Operator Mono
+font-size = 16
+window-title-font-family = Operator Mono
+font-synthetic-style = false
+theme = dark:everforest-dark,light:everforest-light
+
+mouse-hide-while-typing = true
+window-height = 55
+window-width = 112
+macos-titlebar-style = tabs
+
+quick-terminal-position = center
+
+## Terminal Behavior
+### 2 GiB in bytes
+scrollback-limit = 2147483648
+desktop-notifications = false
+
+## Keybindings
+keybind = global:cmd+grave_accent=toggle_quick_terminal
