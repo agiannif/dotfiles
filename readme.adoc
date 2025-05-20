@@ -10,6 +10,8 @@ My dotfiles for configuring common tools.
 
 The bootstrap.sh script pulls the latest changes and syncs them to the user's home directory.
 
+Use brew bundle to install the homebrew apps on mac.
+
 == Supported Tools
 
 - https://fishshell.com[fish shell]
