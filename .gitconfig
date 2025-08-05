@@ -43,9 +43,23 @@
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
 
+[branch]
+
+    # Sorts branches by most recent commit date (newest first) instead of alphabetically
+    sort = -committerdate
+
+[column]
+
+    # Makes Git automatically format output in columns when it makes sense
+    ui = auto
+
+[commit]
+
+    verbose = true
+
 [core]
 
-        # Use custom `.gitignore` and `.gitattributes`
+    # Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
 
@@ -91,13 +105,67 @@
 	changed = green
 	untracked = cyan
 
+[credential]
+
+	helper = osxkeychain
+
 [diff]
+
+    # Uses a more advanced algorithm for showing differences between files
+    algorithm = histogram
+
+    # Highlights moved code blocks in diffs
+    colorMoved = plain
+
+    # Shows more intuitive prefixes in diffs (like "index" vs "working tree")
+    mnemonicPrefix = true
 
 	# Detect copies as well as renames
 	renames = copies
 
+[fetch]
+
+    prune = true
+	pruneTags = true
+	all = true
+
 [help]
 
 	# Automatically correct and execute mistyped commands
-	autocorrect = 1
+	autocorrect = 50
 
+[init]
+
+    defaultBranch = main
+
+[merge]
+
+    conflictstyle = zdiff3
+
+[push]
+
+	# Only pushes the current branch by default
+    default = simple
+
+	autoSetupRemote = true
+	followTags = true
+
+[rebase]
+
+    autoSquash = true
+	autoStash = true
+	updateRefs = true
+
+[rerere]
+
+    enabled = true
+	autoupdate = true
+
+[tag]
+
+    # Sorts tags by version numbers properly (so v1.10 comes after v1.9)
+    sort = version:refname
+
+[user]
+	name = Anthony Fenzl
+	email = anthonyfenzl@pm.me
